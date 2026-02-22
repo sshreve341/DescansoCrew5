@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base target="_top">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com" rel="stylesheet">
+  <style>
+    :root { 
+      --bg-gold-brown: #B58147;
+      --primary-brown: #8B7561;
+      --white-accent: #ffffff;
+      --accent-yellow: #ffd700;
+      --fema-blue: #002d62;
+      --youtube-red: #FF0000;
+    }
+    
+    body { 
+      background-color: var(--bg-gold-brown); 
+      font-family: 'Didact Gothic', sans-serif; 
+      margin: 0;
+      color: var(--white-accent);
+      line-height: 1.6;
+    }
+
+    .hero-banner {
+      background-color: var(--primary-brown);
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .crew-logo {
+      width: 320px; 
+      max-width: 85%;
+      height: auto;
+      margin: 0 auto 20px auto;
+      display: block;
+      filter: drop-shadow(0 6px 15px rgba(0,0,0,0.6));
+    }
+
+ /* CENTERED TRAINING PHOTO STYLING */
+    .training-photo {
+      width: 100%;
+      max-width: 850px;
+      height: auto;
+      border-radius: 12px;
+      margin: 30px auto; /* "auto" handles the centering */
+      display: block;    /* ensures it behaves as a block for centering */
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+
+    h1 { font-weight: bold; letter-spacing: 3px; margin: 0; font-size: 2.2rem; }
+    h2 { margin: 5px 0 20px 0; opacity: 0.9; font-weight: normal; letter-spacing: 1px; }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+     .drive-embed-container {
+      width: 100%;
+      height: 500px; /* Changed from 380px to 500px */
+      border-radius: 8px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn {
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .portal-btn { background-color: var(--accent-yellow); color: #000; }
+    .fema-btn { background-color: var(--fema-blue); color: #fff; }
+    .yt-btn { background-color: var(--youtube-red); color: #fff; width: 100%; max-width: 320px; }
+    .btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+
+    .content-section { max-width: 900px; margin: 20px auto; padding: 0 20px; }
+
+    .info-card {
+    background: rgba(255, 255, 255, 0.15);
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      margin-bottom: 25px;
+    }
+
+
+    h3 { border-bottom: 2px solid var(--accent-yellow); padding-bottom: 10px; text-transform: uppercase; margin-top: 0; }
+    
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+    li::before { content: "➤"; position: absolute; left: 0; color: var(--accent-yellow); }
+
+    /* UPLOADER GRID */
+    .uploader-grid {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .uploader-column {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .drive-embed-container {
+      width: 100%;
+      height: 380px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .uploader-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      color: var(--accent-yellow);
+      display: block;
+      font-weight: bold;
+    }
+
+    .contact-box {
+      text-align: center;
+      background: rgba(0,0,0,0.25);
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 50px;
+    }
+
+    .highlight { font-weight: bold; color: var(--accent-yellow); }
+  </style>
+</head>
+<body>
+
+  <div class="hero-banner">
+    <img src="https://i.postimg.cc/QdL28bFk/crew5_logo.png" class="crew-logo" alt="Descanso 5">
+    <h1>U.S. FOREST SERVICE</h1>
+    <h2>DESCANSO 5 CREW</h2>
+    
+    <div class="button-group">
+      <a href="https://www.wildlandfirelearningportal.net" class="btn portal-btn">Learning Portal</a>
+      <a href="https://training.fema.gov" class="btn fema-btn">IS-100</a>
+      <a href="https://training.fema.gov" class="btn fema-btn">IS-700</a>
+    </div>
+    <a href="https://youtu.be/ZxkeYnEBZzg" class="btn yt-btn">Watch Recruitment Video</a>
+  </div>
+
+  <img src="https://i.postimg.cc/5NwHR3Tw/crewphoto.png" 
+       class="training-photo" 
+       alt="Descanso Crew Training Photo">
+
+        <!-- OVERVIEW -->
+    <div class="info-card">
+      <h3>Type 2 Hand Crew(AD) Overview</h3>
+      <p>A Type 2 On-Call (AD) Hand Crew is a wildland fire suppression crew made up of trained firefighters who are mobilized as needed to support incident operations. These crews provide critical ground-based firefighting support on initial attack and extended attack incidents.</p>
+       
+       <ul>
+        <li>Constructing and improving handline using hand tools (Pulaskis, shovels, McLeods, chainsaws</li>
+        <li>Cutting fireline in steep, rugged, or remote terrain where engines and heavy equipment cannot operate</li>
+        <li>Conducting mop-up and patrol to secure containment lines</li>
+        <li>Performing firing operations (when qualified and directed)</li>
+        <li>Supporting hose lays, structure protection, and engine crews</li>
+        <li>Assisting with fuels reduction and prescribed fire projects</li>
+        <li>Spike camp operations and extended assignments (often 14-day rolls)</li>
+      </ul>
+    </div>
+
+          <!-- POSITION DESCRIPTION -->
+    <div class="info-card">
+      <h3>Position Information</h3>
+      <p>Currently seeking highly motivated individuals to fill our Type II Hand crew, <strong>Descanso Crew 5</strong>. This is an excellent opportunity to jumpstart a career in Wildland Fire with the U.S. Forest Service. We provide Basic and Refresher firefighter training.</p>
+      
+      <ul>
+        <li><strong>Compensation:</strong> Students will be paid for all training (approx. 40 hrs) and field days, earning <span class="highlight">$22.16 - $24.36 per hour</span>.</li>
+        <li><strong>On-Call Status:</strong> This is an on-call firefighter position. Work is based on fire activity nationwide and local forest resource availability.</li>
+        <li><strong>Commitment:</strong> When activated, members work 8-16 hour shifts with a 14-21 day commitment for local coverage or emergency assignments.</li>
+        <li><strong>Physical Fitness:</strong> Crew members can expect to run or hike every day. You MUST pass the <a href="https://www.fs.usda.gov/managing-land/fire/safety/wct" target="_blank" class="highlight">Work Capacity Test</a> on Day 1 (3-mile walk with 45lb vest in 45 mins).</li>
+        <li><strong>Logistics:</strong> Lodging and lunch are NOT provided. You are responsible for transportation, carpooling is recommended, and you must be on time every day.</li>
+      </ul>
+      <p><em>Note: Once selected, you will be contacted via email by the Crew Boss.</em></p>
+    </div>
+
+  <div class="content-section">
+    
+     <!-- REQUIREMENTS & GEAR -->
+    <div class="info-card">
+      <h3>Day 1 Requirements & Gear</h3>
+      <p>Crew cohesion is important, and we need to look professional. Please adhere to the following:</p>
+      <ul>
+        <li><strong>Attire:</strong> Plain black t-shirt (<strong>NO advertising/logos</strong>), plain shorts/pants, and running type shoes.</li>
+        <li><strong>Boots:</strong> APPROVED Wildland Firefighting Boots are <span class="highlight">REQUIRED</span> on Day 1. Must have 8” upper leather with a non-skid/Vibram sole. 
+          <br><em>Recommended: Boot World, Red Wing, Fire Etc., Carl’s Boots. <span class="highlight">Break them in before training!</span></em></li>
+        <li><strong>Essentials:</strong> Black or brown belt, wristwatch, and knife.</li>
+        <li><strong>Sustenance:</strong> Bring your own lunch and plenty of water. Transportation is your responsibility; carpooling is recommended.</li>
+        <li><strong>How to Apply:</strong> Upload your Resume and Certs below.</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>Save your resume using your full first and last name, followed by "Resume." Use underscores to separate words.
+Example: John_Doe_Resume.pdf</h3>
+      <div class="uploader-grid">
+        
+        <!-- RESUME UPLOADER -->
+        <div class="uploader-column">
+          <span class="uploader-label">1. Resume Upload</span>
+          <div class="drive-embed-container">
+            <iframe src="https://form.jotform.com/cacnf05/resume-uploader" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+
+ <!-- IS-100 UPLOADER -->
+        <div class="uploader-column">
+          <span class="uploader-label">2. IS-100</span>
+          <div class="drive-embed-container">
+            <iframe src="https://form.jotform.com/260496978183070" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+
+        
+
+        <!-- IS-1700 UPLOADER -->
+        <div class="uploader-column">
+          <span class="uploader-label">3. IS-700</span>
+          <div class="drive-embed-container">
+            <iframe src="https://form.jotform.com/260495735540057" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <strong>Questions? Contact Supervisors:</strong><br>
+      Luke Tinker: <span class="highlight">(619) 928-8358</span><br>
+      Jhonny Orozco: <span class="highlight">Jhonny.Orozco@usda.gov</span><br>
+      <strong>Deadline: 3/13/2026</strong>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
